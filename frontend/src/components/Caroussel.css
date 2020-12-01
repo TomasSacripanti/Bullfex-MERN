@@ -39,15 +39,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .carousel-card h1 {
-    font-size: 2.2em;
+    font-size: 1.8rem;
 }
 .carousel-card p {
-    margin-top: .8em;
+    margin-top: .8rem;
     font-weight: 600;
-    font-size: 1em;
+    font-size: .8rem;
 }
 #carousel-container-two {
     justify-content: flex-end;
@@ -66,7 +65,7 @@
 #blog-card {
     color: white;
 }
-.carousel-card > button {
+.carousel-card > a {
     border: none;
     border-radius: 5px;
     width: 30%;
@@ -74,9 +73,11 @@
     color: white;
     background-color: #2574A9;
     transition: 300ms;
-    font-size: 1em;
+    font-size: .8rem;
+    text-decoration: none;
+    text-align: center;
 }
-.carousel-card > button:hover {
+.carousel-card > a:hover {
     opacity: .9;
     transform: translateY(-3px);
 }
@@ -89,48 +90,55 @@
         width: 40%;
     }
     .carousel-card > h1 {
-        font-size: 2em;
+        font-size: 2rem;
     }
     .carousel-card > p {
-        font-size: .9em;
+        font-size: .9rem;
     }
-    .carousel-card > button {
-        font-size: .9em;
+    .carousel-card > a {
+        font-size: .9rem;
+    }
+    .nav-item {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 876px) {
     .carousel-card {
-        margin: 0 auto;
-        width: 75%;
+        margin: 0;
+        width: 100%;
+        align-items: center;
     }
     .carousel-card > h1 {
-        font-size: 1.8em;
+        font-size: 2rem;
+        text-align: center;
     }
     .carousel-card > p {
-        font-size: .8em;
+        font-size: 1rem;
+        text-align: center;
     }
-    .carousel-card > button {
+    .carousel-card > a {
         width: 45%;
-        font-size: .8em;
+        font-size: 1rem;
+        text-align: center;
     }
 }
 
 @media (max-width: 768px) {
     .carousel-card > h1 {
         margin-bottom: 25px;
-        font-size: 1.6em;
+        font-size: 2.6rem;
     }
     .carousel-card > p {
         display: none;
     }
-    .carousel-card > button {
+    .carousel-card > a {
         width: 45%;
     }
 }
 
 @media (max-width: 600px) {
     .main {
-        margin-top: 80px;
+        margin-top: 60px;
     }
 }

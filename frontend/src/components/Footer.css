@@ -19,6 +19,9 @@ i {
 ul {
     list-style: none;
 }
+.lista-des > li {
+    text-align: center;
+}
 .lista-des > li > a {
     color: rgba(0,0,0,.5);
 }

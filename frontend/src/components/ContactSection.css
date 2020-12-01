@@ -9,35 +9,88 @@ form {
     justify-content: space-around;
 }
 
+.form-row > label, .form-group > label {
+    font-size: .8rem;
+}
+.form-group > input {
+    font-size: .8rem;
+}
+
+.left-contact > h2 {
+    font-size: 1.6rem;
+}
+.left-contact > h4 {
+    font-size: 1rem;
+}
+
+#comment {
+    font-size: .8rem;
+}
+
 @media (max-width: 1040px) {
     .left-contact > h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .left-contact > h4 {
         font-size: 1.3rem;
     }
     form {
-        padding: 15px;
+        padding: 30px;
         min-height: initial;
     }
     .form-row > label, .form-group > label {
-        font-size: .9rem;
+        font-size: .8rem;
+    }
+    .form-row > label, .form-group > input {
+        height: 30px;
+    }
+    #comment {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 876px) {
+    form {
+        padding: 20px;
+    }
+    .form-row > label, .form-group > input {
+        height: 25px;
+        font-size: 1rem;
+    }
+    .left-contact > h2 {
+        font-size: 1.6rem;
+    }
+    .left-contact > h4 {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
     .left-contact {
         margin-bottom: 20px;
     }
-    form {
-        width: 75%;
-        margin: 0 auto;
+    .left-contact > h2 {
+        font-size: 2rem;
+    }
+    .left-contact > h4 {
+        font-size: 1.3rem;
+    }
+    .form-row > label, .form-group > label {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 600px) {
     form {
         width: 100%;
+        min-height: 340px;
+    }
+    .left-contact > h2 {
+        font-size: 2.4rem;
     }
     .left-contact > h4 {
         display: none;
@@ -45,5 +98,7 @@ form {
     .row > div {
         padding: 0px;
     }
+    .form-row > label, .form-group > label {
+        font-size: 1.2rem;
+    }
 }
-

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Caroussel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,8 +12,8 @@ const Caroussel = () => {
                         <div className="carousel-container" id="carousel-container-one">
                             <div className="carousel-card" id="purpose-card">
                                 <h1>Propulsamos el sueño emprendedor.</h1>
-                                <p>Nuestro propósito es ayudar a los emprendedores del siglo 21 a crecer y monetizar sus proyectos mediante la creación de plataformas digitales.</p>
-                                <button>Propósito</button>
+                                <p>Nuestro propósito es ayudar a los emprendedores del siglo 21 a crecer y monetizar sus proyectos mediante la creación y optimización de plataformas digitales.</p>
+                                <a href="#contact" >Contacto</a>
                             </div>
                         </div>
                     </div>
@@ -21,7 +22,7 @@ const Caroussel = () => {
                             <div className="carousel-card" id="services-card">
                                 <h1>Impulsá tu marca al siguiente nivel.</h1>
                                 <p>Goza de los múltiples beneficios de llevar tu marca al mundo digital con un sitio web adaptable a todos los dispositivos o una tienda e-commerce auto-administrable.</p>
-                                <button>Servicios</button>
+                                <a href="#services" >Servicios</a>
                             </div>
                         </div>
                     </div>
@@ -31,7 +32,7 @@ const Caroussel = () => {
                                 <h1>Aprendé a digitalizar tu marca con nuestro blog.</h1>
                                 <p>Cada semana compartimos tips y contenido de alto valor informativo para que aprendas a
                                 llevar a cabo tus ideas al terreno del mundo digital.</p>
-                                <button>Visitar Blog</button>
+                                <Link to="/blog">Visitar Blog</Link>
                             </div>
                         </div>
                     </div>

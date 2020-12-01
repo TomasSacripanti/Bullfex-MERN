@@ -9,7 +9,7 @@ import card5 from '../assets/images/card5.jpg';
 
 const ServicesSection = () => {
     return (
-        <div className="container-fluid services">
+        <div id="services" className="container-fluid services">
             <div className="services-title">
                 <h3>¿Cómo podés beneficiarte de nuestros servicios?</h3>
             </div>
@@ -23,7 +23,7 @@ const ServicesSection = () => {
                             <div className="card-body">
                                 <h5 className="card-title">Desarrollo web</h5>
                                 <p className="card-text">Desarrollaremos un sitio web altamente personalizado acorde a los lineamientos de tu marca transmitiendo a tus clientes una imagen profesional y de confianza.</p>
-                                <a href="#" className="btn">Precios</a>
+                                <a href="#" className="btn">Consultar</a>
                             </div>
                         </div>
                     </div>
@@ -34,9 +34,9 @@ const ServicesSection = () => {
                             </div>
                             <div className="card-body">
                                 <h5 className="card-title">Tienda E-commerce</h5>
-                                <p className="card-text">Crearemos una tienda online auto-administrable a la cuál podrás cargar tus productos y empezar a vender en línea.
+                                <p className="card-text">Crearemos tu tienda online auto-administrable a la cuál podrás cargar los productos de tu marca y empezar a vender al mundo a través de internet.
                                 </p>
-                                <a href="#" className="btn">Precios</a>
+                                <a href="#" className="btn">Consultar</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const ServicesSection = () => {
                             <div className="card-body">
                                 <h5 className="card-title">Posicionamiento SEO</h5>
                                 <p className="card-text">Aumentaremos el tráfico que llega a tu sitio web mediante la implementación de técnicas de posicionamiento SEO en Google, el buscador más popular.</p>
-                                <a href="#" className="btn">Precios</a>
+                                <a href="#" className="btn">Consultar</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const ServicesSection = () => {
                             <div className="card-body">
                                 <h5 className="card-title">SEO local</h5>
                                 <p className="card-text">Si tienes un negocio local te será de mucha ayuda posicionar tu marca en Google cuando las personas de tu localidad realizen una búsqueda.</p>
-                                <a href="#" className="btn">Precios</a>
+                                <a href="#" className="btn">Consultar</a>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const ServicesSection = () => {
                             <div className="card-body">
                                 <h5 className="card-title">Hosting y Dominio</h5>
                                 <p className="card-text">En caso de que sea necesario también nos encargaremos de gestionar el alquiler de un servidor y un nombre de Dominio correcto para alojar tu sitio.</p>
-                                <a href="#" className="btn">Precios</a>
+                                <a href="#" className="btn">Consultar</a>
                             </div>
                         </div>
                     </div>
