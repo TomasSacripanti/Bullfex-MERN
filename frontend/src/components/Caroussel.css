@@ -1,0 +1,136 @@
+.main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+}
+#carouselExampleControls {
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img-one {
+    background-image: url('../assets/images/slide1.jpg');
+}
+#img-two {
+    background-image: url('../assets/images/slide2.jpg');
+}
+#img-three {
+    background-image: url('../assets/images/slide3.jpg');
+}
+.carousel-container {
+    width: 65%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.carousel-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-card h1 {
+    font-size: 2.2em;
+}
+.carousel-card p {
+    margin-top: .8em;
+    font-weight: 600;
+    font-size: 1em;
+}
+#carousel-container-two {
+    justify-content: flex-end;
+}
+#carousel-container-two h1,
+#carousel-container-two p {
+    color: white;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blog-card {
+    color: white;
+}
+.carousel-card > button {
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    padding: 5px 10px;
+    color: white;
+    background-color: #2574A9;
+    transition: 300ms;
+    font-size: 1em;
+}
+.carousel-card > button:hover {
+    opacity: .9;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1040px) {
+    .carousel-card {
+        width: 60%;
+    }
+    .carousel-card > button {
+        width: 40%;
+    }
+    .carousel-card > h1 {
+        font-size: 2em;
+    }
+    .carousel-card > p {
+        font-size: .9em;
+    }
+    .carousel-card > button {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 876px) {
+    .carousel-card {
+        margin: 0 auto;
+        width: 75%;
+    }
+    .carousel-card > h1 {
+        font-size: 1.8em;
+    }
+    .carousel-card > p {
+        font-size: .8em;
+    }
+    .carousel-card > button {
+        width: 45%;
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-card > h1 {
+        margin-bottom: 25px;
+        font-size: 1.6em;
+    }
+    .carousel-card > p {
+        display: none;
+    }
+    .carousel-card > button {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin-top: 80px;
+    }
+}

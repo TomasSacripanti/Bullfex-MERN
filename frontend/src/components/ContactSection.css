@@ -1,0 +1,49 @@
+form {
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 1040px) {
+    .left-contact > h2 {
+        font-size: 1.8rem;
+    }
+    .left-contact > h4 {
+        font-size: 1.3rem;
+    }
+    form {
+        padding: 15px;
+        min-height: initial;
+    }
+    .form-row > label, .form-group > label {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-contact {
+        margin-bottom: 20px;
+    }
+    form {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+    .left-contact > h4 {
+        display: none;
+    }
+    .row > div {
+        padding: 0px;
+    }
+}
+

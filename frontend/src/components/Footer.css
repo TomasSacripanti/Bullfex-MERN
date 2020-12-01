@@ -1,0 +1,54 @@
+footer {
+    height: 300px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+footer > div {
+    width: 100%;
+    
+}
+footer  figure {
+    width: 38%;
+}
+i {
+    color: rgba(0,0,0,.8);
+}
+
+ul {
+    list-style: none;
+}
+.lista-des > li > a {
+    color: rgba(0,0,0,.5);
+}
+
+@media (max-width: 1040px) {
+    footer figure {
+        width: 46%;
+    }
+}
+
+@media (max-width: 876px) {
+    footer figure {
+        width: 54%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer figure {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: auto;
+    }
+    .row > div {
+        height: auto;
+    }
+    footer figure {
+        width: 80px;
+    }
+}
