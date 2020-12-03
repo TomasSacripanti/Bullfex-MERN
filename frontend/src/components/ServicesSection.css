@@ -27,7 +27,7 @@
 .card {
     margin: 0 20px;
     overflow: hidden;
-    min-height: 500px;
+    min-height: 480px;
 }
 .image-container {
     overflow: hidden;
@@ -39,6 +39,9 @@
 }
 .card > img {
     width: 100%;
+}
+.card-title {
+    text-align: center;
 }
 .card-text {
     font-size: .85rem;

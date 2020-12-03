@@ -35,7 +35,13 @@ class Header extends Component {
                                 <a href="">Desarrollo web</a>
                             </li>
                             <li className="sub-item">
+                                <a href="">Tienda E-commerce</a>
+                            </li>
+                            <li className="sub-item">
                                 <a href="">Posicionamiento SEO</a>
+                            </li>
+                            <li className="sub-item">
+                                <a href="">SEO local</a>
                             </li>
                             <li className="sub-item">
                                 <a href="">Hosting y dominio</a>
