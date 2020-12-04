@@ -1,23 +1,23 @@
-const potentialClientCtrl = {};
-const PotentialClient = require('../models/PotentialClient');
+const clientCtrl = {};
+const Prospect = require('../models/PotentialClient');
 
-potentialClientCtrl.getPotentialClients = async (req, res) => {
-    const clients = await PotentialClient.find();
+clientCtrl.getPotentialClients = async (req, res) => {
+    const clients = await Prospect.find();
     res.json(clients);
 }
 
-potentialClientCtrl.addPotentialClient = async (req, res) => {
+clientCtrl.addPotentialClient = async (req, res) => {
     const { name, email, phone, website, comment } = req.body;
-    const newPotentialClient = new PotentialClient({
+    const newProspect = new Prospect({
         name,
         email,
         phone,
         website,
         comment,
     });
-    await newPotentialClient.save();
-    res.json('Saved PotentialClient');
+    await newProspect.save();
+    res.json('Saved New Prospect');
 }
 
 
-module.exports = potentialClientCtrl;
+module.exports = clientCtrl;

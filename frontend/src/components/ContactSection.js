@@ -18,15 +18,19 @@ export class ContactSection extends Component {
           [e.target.name]: e.target.value, 
       })
   };
-  onSubmit = async () => {
+  addProspect = async (e) => {
+    e.preventDefault();
+    const { name, email, phone, website, comment} = this.state;
     const newProspect = {
-        name: this.state.name,
-        email: this.state.email,
-        phone: this.state.phone,
-        website: this.state.website,
-        comment: this.state.comment,
+        name,
+        email,
+        phone,
+        website,
+        comment,
     }
     await Axios.post('http://localhost:4000', newProspect);
+    const form = document.querySelector('#form');
+    form.reset();
   };
   render() {
     return (
@@ -42,8 +46,8 @@ export class ContactSection extends Component {
                 contarte más sobre nuestra propuesta de valor.
               </h4>
             </div>
-            <div className="col-md-6 px-3">
-              <form onSubmit={this.addProspect}>
+            <div className="form-div col-md-6 px-3">
+              <form id="form" onSubmit={this.addProspect}>
                 <div className="form-row">
                   <div className="form-group col-6">
                     <label htmlFor="name">Nombre</label>

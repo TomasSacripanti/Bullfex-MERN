@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Routes
 app.use('/', require('./routes/PotentialClients'));
-app.use('/contacto', require('./routes/PotentialClients'));
+// app.use('/contacto', require('./routes/PotentialClients'));
 
 
 module.exports = app;
